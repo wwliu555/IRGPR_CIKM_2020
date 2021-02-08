@@ -23,10 +23,15 @@ This is a pytorch re-implementation of the paper [Personalized Re-ranking with I
 
 ### Experiment Data
 * [Amazon Review Data](https://jmcauley.ucsd.edu/data/amazon/)
+* To process a new dataset, please get the following files ready and put them in the ```raw``` directory.
+  * vertorized features ready using ```gensim```, transforming text reviews to dense vectors.
+  * Initial ranked lists in the format of ```uid iid label initial_score```.
+  * Meta file with item relations.
+ * We provided a sample processed heterogenous graph ```Amazon_Video_Games.pt``` from Amazon Video Games category, so that you can directly load the processed the data and train the model.
 
 ### Experiment
 * Before running, please modify the corresponding Amazon data category in ```amazon_rerank_loader.py```.
 ```
 python run_irgpr.py --lr [lr] --node_emb [node embedding dim]
 ```
-* We provided a sample processed data ```Amazon_Video_Games.pt```.
+
