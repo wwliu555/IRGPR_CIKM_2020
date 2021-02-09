@@ -30,7 +30,7 @@ ratings_Video_Games.csv
 reviews_Video_Games.json.gz
 ```
 * Obtain node features from reviews by ```gensim.models.doc2vec```.
-* As well as the initial ranked lists.
+* As well as the initial ranked lists, examples as ```data/Amazon/raw/train_ratings_Video_Games.txt``` and ```data/Amazon/raw/test_ratings_Video_Games.txt``` in the format of ```[uid] [iid] [label] [initial score]```.
 * We provided a sample processed heterogenous graph ```Amazon_Video_Games.pt``` from Amazon Video Games raw data, so that you can directly load the processed the data and train the model.
 
 ### Experiment
