@@ -23,14 +23,15 @@ This is a pytorch re-implementation of the paper [Personalized Re-ranking with I
 
 ### Experiment Data
 * [Amazon Review Data](https://jmcauley.ucsd.edu/data/amazon/)
-* To process a dataset from raw files, please get the following files from [Amazon Review Data](https://jmcauley.ucsd.edu/data/amazon/) and put them in the ```raw``` directory.
-```
-meta_Video_Games.json.gz
-ratings_Video_Games.csv
-reviews_Video_Games.json.gz
-```
-* Obtain node features from reviews by ```gensim.models.doc2vec```, and put the ```.d2v``` file to ```data/Amazon/raw/```.
-* As well as the initial ranked lists, examples as ```data/Amazon/raw/train_ratings_Video_Games.txt``` and ```data/Amazon/raw/test_ratings_Video_Games.txt``` in the format of ```[uid] [iid] [label] [initial score]```.
+* To process a dataset from raw files
+  * Please get the following files from [Amazon Review Data](https://jmcauley.ucsd.edu/data/amazon/) and put them at the ```raw/``` directory.
+  ```
+  meta_Video_Games.json.gz
+  ratings_Video_Games.csv
+  reviews_Video_Games.json.gz
+  ```
+  * Obtain node features from reviews by ```gensim.models.doc2vec```, and put the ```.d2v``` file at ```raw/```.
+  * As well as the initial ranked lists, examples as ```data/Amazon/raw/train_ratings_Video_Games.txt``` and ```data/Amazon/raw/test_ratings_Video_Games.txt``` in the format of ```[uid] [iid] [label] [initial score]```.
 * We provided a sample processed heterogenous graph ```Amazon_Video_Games.pt``` from Amazon Video Games raw data, so that you can directly load the processed the data and train the model.
 
 ### Experiment
