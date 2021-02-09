@@ -29,10 +29,7 @@ meta_Video_Games.json.gz
 ratings_Video_Games.csv
 reviews_Video_Games.json.gz
 ```
-* Obtain node features by running
-``` 
-python doc2vec.py
-```
+* Obtain node features from reviews by ```gensim.models.doc2vec```.
 * As well as the initial ranked lists.
 * We provided a sample processed heterogenous graph ```Amazon_Video_Games.pt``` from Amazon Video Games raw data, so that you can directly load the processed the data and train the model.
 
