@@ -32,7 +32,7 @@ This is a pytorch re-implementation of the paper [Personalized Re-ranking with I
   ```
   * Obtain node features from reviews by ```gensim.models.doc2vec```, and put the ```.d2v``` file at ```raw/```.
   * As well as the initial ranked lists, examples as ```data/Amazon/raw/train_ratings_Video_Games.txt``` and ```data/Amazon/raw/test_ratings_Video_Games.txt``` in the format of ```[uid] [iid] [label] [initial score]```.
-* We provided a sample processed heterogenous graph ```Amazon_Video_Games.pt``` from Amazon Video Games raw data, so that you can directly load the processed the data and train the model.
+* We provided a sample processed heterogenous graph ```Amazon_Video_Games.pt``` from Amazon Video Games raw data, so that you can directly load the processed data and train the model.
 
 ### Experiment
 * Before running, please modify the corresponding Amazon data category in ```amazon_rerank_loader.py```.
