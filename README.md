@@ -1,4 +1,4 @@
-# IRGPR
+# IRGPR_CIKM_2020
 
 This is a pytorch re-implementation of the paper [Personalized Re-ranking with Item Relationships for E-commerce](https://dl.acm.org/doi/abs/10.1145/3340531.3412332), built upon [PyG](https://pytorch-geometric.readthedocs.io/en/latest/) library.
 
